@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="ferns.avif" alt="Some green ferns">
+        <div class="card-body">
+            <div class="logo-text">ODIN</div>
+        </div>
+
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+            <a href="https://unsplash.com">Unsplash</a>
+        </p>
+    </div>
+
+    <div class="text-container">
+        <div>
+            <h1>This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                You <em>know</em> you want to.
+            </h1>
+        </div>
+        <div class="form-body">
+            <h1>Let's do this!</h1>
+            <form id="sign-up">
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input 
+                        type="text" 
+                        name="first-name" 
+                        id="first-name" 
+                        required>
+                </div>
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input 
+                        type="text" 
+                        name="last-name" 
+                        id="last-name" 
+                        required>
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="example@domain.com"
+                        required>
+                </div>
+                <div>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input 
+                        type="tel" 
+                        name="phone-number" 
+                        id="phone-number">
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="passsword" 
+                        minlength="8"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&])[A-Za-z\d@#$!%*?&]{8,}$"
+                        required>
+                </div>
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input 
+                        type="password" 
+                        name="confirm-password" 
+                        id="confirm-password" 
+                        minlength="8"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&])[A-Za-z\d@#$!%*?&]{8,}$"
+                        required>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button type="submit" form="sign-up">Create Account</button>
+            <p>Already have an account? <a class="login" href="">Log in</a></p>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+
+</html>

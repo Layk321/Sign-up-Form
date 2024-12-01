@@ -1,0 +1,118 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  @font-face {
+    font-family: 'norsebold';
+    src: url('/Fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('/Fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  body {
+    display: flex;
+  }
+
+  a {
+    color: inherit;
+  }
+
+
+  body > div {
+    border: 1px solid red;
+    flex: 1;
+  }
+
+  .logo-text::before {
+    content: '';
+    background: url("odin-lined.png") no-repeat;
+    background-size: 80px 80px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-text {
+    font-family: 'norsebold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+
+  button {
+    border: 1px #596D48 solid;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: white;
+    padding: 0.5em 2em;
+  }
+
+  input:focus {
+
+  }
+
+  input[type="password"]:invalid {
+    border: 1px solid red;
+  }
+
+  .image-container {
+    position: relative;
+    height: 100%;
+    /* width: 25%; */
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .image-container > p {
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  img {
+    height: 100vh;
+    width: 100%;
+    /* z-index: -1; */
+  }
+
+  .card-body {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 10rem;
+    background: black;
+    opacity: 0.6;
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .login{
+    text-decoration: none;
+    color: #596D48;
+  }
