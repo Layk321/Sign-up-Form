@@ -46,10 +46,8 @@
     color: inherit;
   }
 
-
   body > div {
     flex: 1;
-    border: 1px red solid;
   }
 
   .text-container {
@@ -60,13 +58,56 @@
     min-height: calc(100% / 3);
   }
 
-  .form-body {
-    box-shadow: ;
+
+
+
+  .text-container div:first-child {
+    line-height: 1.1;
+  }
+
+  .text-container div:first-child > h1 {
+    padding: 5.5em 0px 0px 3rem;
+  }
+
+  .text-container div:first-child p:last-child {
+    margin-top: 1em;
+  }
+
+
+
+
+  .form-body { 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    padding: 2em 0px 0px 3rem;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2em;
+  }
+
+  form > div {
+    flex: 1 1 45%;
+    position: relative;
+    padding-top: 3em;
+  }
+
+  label {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: 2.5em;
   }
 
   input {
     border: 1.5px solid #E5E7EB;
     border-radius: 4px;
+    height: 2em;
+    min-width: 20em;
+    max-width: 50px;
+    width: 100%;
   }
 
   input:focus {
@@ -79,18 +120,35 @@
     border: 1.5px solid red;
   }
 
+
+
+
   button {
     border: 1px #596D48 solid;
     border-radius: 8px;
     background-color: #596D48;
     color: white;
-    padding: 0.5em 2em;
+    padding: 0.6em 3em;
+    font-size: 1.2em;
+    box-shadow: 0px 2px 10px 0px gray;
+    cursor: pointer;
   }
 
   .login{
     text-decoration: none;
     color: #596D48;
   }
+
+  .text-container > div:last-child  {
+    padding: 3em 0px 0px 3rem;
+  }
+
+  .text-container > div:last-child *  {
+    margin-bottom: 2em;
+  }
+
+
+
 
   .image-container {
     position: relative;
@@ -146,3 +204,6 @@
     top: 5px;
   }
 
+  .text-container > div:nth-child(odd) {
+  background-color:  #f9fafb;
+ }
